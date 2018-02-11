@@ -123,6 +123,16 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
+    <ProjectReference Include="..\..\SNavigation\SNavigation.iOS\SNavigation.iOS.csproj">
+      <Project>{b6d63263-7358-48d2-8ede-3b5642375e4f}</Project>
+      <Name>SNavigation.iOS</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SNavigation\SNavigation\SNavigation.csproj">
+      <Project>{28424cad-3ffe-4db4-b36d-c6ef5449832c}</Project>
+      <Name>SNavigation</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Test\Test.csproj">
       <Project>{5AA5A57E-7F61-40B6-9BEE-7C360F3FBD74}</Project>
       <Name>Test</Name>
