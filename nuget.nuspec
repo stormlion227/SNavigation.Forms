@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SNavigation.Forms</id>
+    <version>0.1.0</version>
+    <authors>Marko Rothstein</authors>
+    <owners>Marko Rothstein</owners>
+    <projectUrl>https://github.com/stormlion227/SNavigation.Forms</projectUrl>
+    <licenseUrl>https://github.com/stormlion227/SNavigation.Forms/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SNavigation(Xamarin.Forms) allows you to put any elements on navigation bar.</description>
+    <summary>SNavigation(Xamarin.Forms) allows you to put any elements on navigation bar.</summary>
+    <releaseNotes>First release.</releaseNotes>
+    <copyright>© StormLion 2018</copyright>
+    <tags>xamarin forms NavigationPage control</tags>
+    <dependencies>
+      <group>
+        <dependency id="Xamarin.Forms" version="2.5.0"/>
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    
+    <file src="SNavigation/SNavigation/bin/Release/netstandard2.0/Stormlion.SNavigation.dll" target="lib/netstandard2.0" />
+
+    <file src="SNavigation/SNavigation.Android/bin/Release/Stormlion.SNavigation.dll" target="lib/MonoAndroid" />
+    <file src="SNavigation/SNavigation.Android/bin/Release/Stormlion.SNavigation.Android.dll" target="lib/MonoAndroid" />
+
+    <file src="SNavigation/SNavigation.iOS/bin/Release/Stormlion.SNavigation.dll" target="lib/Xamarin.iOS10" />
+    <file src="SNavigation/SNavigation.iOS/bin/Release/Stormlion.SNavigation.iOS.dll" target="lib/Xamarin.iOS10" />
+  </files>
+</package>

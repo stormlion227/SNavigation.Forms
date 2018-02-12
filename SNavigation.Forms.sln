@@ -7,17 +7,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Android", "Test\Test.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.iOS", "Test\Test.iOS\Test.iOS.csproj", "{92EE7224-4001-45DD-92DA-700206CCEF01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test\Test.csproj", "{B93CEAA8-385D-47F1-9D41-2BDB44A9ED0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test\Test.csproj", "{B93CEAA8-385D-47F1-9D41-2BDB44A9ED0E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{EBED3116-6912-43AD-BBB4-36E5B2D9190E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SNavigation", "SNavigation\SNavigation\SNavigation.csproj", "{28424CAD-3FFE-4DB4-B36D-C6EF5449832C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SNavigation", "SNavigation\SNavigation\SNavigation.csproj", "{28424CAD-3FFE-4DB4-B36D-C6EF5449832C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{25C98413-B659-4DC3-BABB-AE542BCE5ED5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SNavigation.Android", "SNavigation\SNavigation.Android\SNavigation.Android.csproj", "{C1BAF406-5211-48AA-9D92-D4772F8C3B3B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SNavigation.iOS", "SNavigation\SNavigation.iOS\SNavigation.iOS.csproj", "{B6D63263-7358-48D2-8EDE-3B5642375E4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{81D16BE7-8C25-4212-A198-1C4F2786D8AD}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.md = LICENSE.md
+		nuget.nuspec = nuget.nuspec
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
