@@ -8,7 +8,7 @@ Supports Android and iOS.
 
 ## Screen-Shots
 
-<img src="ScreenShots/screenshot_android.gif" alt="SNavigation"/>
+<img src="ScreenShots/screenshot_android.gif" alt="SNavigation Android"/> <img src="ScreenShots/screenshot_ios.gif" alt="SNavigation iOS"/>
 
 ## Setup
 
