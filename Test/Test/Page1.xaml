@@ -5,7 +5,7 @@
              x:Class="Test.Page1"
              >
     <snav:SNavigationPage.NavContent>
-        <Grid>
+        <Grid BackgroundColor="Blue">
             <Label Text="HHHHH"
                    />
         </Grid>
