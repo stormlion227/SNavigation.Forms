@@ -82,7 +82,7 @@ namespace Stormlion.SNavigation.Droid
 
             if (_navRenderer != null)
             {
-                Xamarin.Forms.Layout.LayoutChildIntoBoundingRegion(_navRenderer.Element, new Rectangle(0, 0, Context.FromPixels(r - l), ToolBar.MeasuredHeight));
+                Xamarin.Forms.Layout.LayoutChildIntoBoundingRegion(_navRenderer.Element, new Rectangle(0, 0, Context.FromPixels(r - l), Context.FromPixels(ToolBar.MeasuredHeight)));
                 _navRenderer.UpdateLayout();
             }
         }

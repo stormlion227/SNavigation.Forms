@@ -17,7 +17,7 @@ namespace Test
 			InitializeComponent ();
 		}
 
-        protected void OnClickedButton1(object sender, EventArgs e)
+        protected void OnClickedPage2(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Page2());
         }

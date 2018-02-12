@@ -50,8 +50,6 @@ namespace Stormlion.SNavigation.iOS
             var navBarFrameBottom = Math.Min(NavigationBar.Frame.Bottom, 140);
             var toolbarY = NavigationBarHidden || NavigationBar.Translucent || !NavigationPage.GetHasNavigationBar((Element as SNavigationPage).CurrentPage) ? 0 : navBarFrameBottom;
 
-            System.Diagnostics.Debug.WriteLine($"{toolbarY}, {View.Bounds.Width}");
-
             Thickness margin = (_navRenderer.Element as Xamarin.Forms.View).Margin;
             _navRenderer.NativeView.Frame = new CoreGraphics.CGRect(
                 margin.Left,

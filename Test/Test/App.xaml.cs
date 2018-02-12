@@ -15,7 +15,10 @@ namespace Test
 			InitializeComponent();
 
             //MainPage = new Test.MainPage();
-            MainPage = new SNavigationPage(new Page1());
+            MainPage = new SNavigationPage(new Page1())
+            {
+                BarBackgroundColor = Color.SkyBlue,
+            };
 		}
 
 		protected override void OnStart ()

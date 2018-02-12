@@ -5,9 +5,11 @@
              x:Class="Test.Page1"
              >
     <snav:SNavigationPage.NavContent>
-        <Grid BackgroundColor="Blue">
-            <Label Text="HHHHH"
-                   />
+        <Grid Margin="50, 0, 50, 0"
+              >
+            <SearchBar BackgroundColor="White"
+                       Placeholder="Search ..."
+                       />
         </Grid>
     </snav:SNavigationPage.NavContent>
     <ContentPage.Content>
@@ -16,7 +18,7 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Button Text="Page2"
-                    Clicked="OnClickedButton1"
+                    Clicked="OnClickedPage2"
                     />
         </StackLayout>
     </ContentPage.Content>

@@ -11,9 +11,15 @@
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="1*" />
             </Grid.ColumnDefinitions>
-            <Entry Grid.Column="1"
-                   Placeholder="Type..."
-                   />
+            <BoxView Grid.Column="0"
+                     BackgroundColor="LightGray"
+                     />
+            <BoxView Grid.Column="1"
+                     BackgroundColor="LightBlue"
+                     />
+            <BoxView Grid.Column="2"
+                     BackgroundColor="Orange"
+                     />
         </Grid>
     </snav:SNavigationPage.NavContent>
     <ContentPage.Content>
