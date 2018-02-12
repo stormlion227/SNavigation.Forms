@@ -27,13 +27,14 @@ namespace Stormlion.SNavigation.iOS
 
         protected void ChangedCurrentPage()
         {
-            if (CurrentNavContent == null)
-                return;
-
             if(_navRenderer != null)
             {
                 _navRenderer.NativeView.RemoveFromSuperview();
             }
+
+            if (CurrentNavContent == null)
+                return;
+
             _navRenderer = Xamarin.Forms.Platform.iOS.Platform.CreateRenderer(CurrentNavContent);
             Xamarin.Forms.Platform.iOS.Platform.SetRenderer(CurrentNavContent, _navRenderer);
             View.AddSubview(_navRenderer.NativeView);
