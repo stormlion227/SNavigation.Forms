@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Stormlion.SNavigation</AssemblyName>
+    <RootNamespace>Stormlion.SNavigation</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

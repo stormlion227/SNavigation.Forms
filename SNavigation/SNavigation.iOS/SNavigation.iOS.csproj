@@ -9,9 +9,9 @@
     <ProjectGuid>{B6D63263-7358-48D2-8EDE-3B5642375E4F}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>SNavigation.iOS</RootNamespace>
+    <RootNamespace>Stormlion.SNavigation.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>SNavigation.iOS</AssemblyName>
+    <AssemblyName>Stormlion.SNavigation.iOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>

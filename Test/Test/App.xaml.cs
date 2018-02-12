@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Stormlion.SNavigation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,8 @@ namespace Test
 		{
 			InitializeComponent();
 
-			MainPage = new Test.MainPage();
+            //MainPage = new Test.MainPage();
+            MainPage = new SNavigationPage(new Page1());
 		}
 
 		protected override void OnStart ()
