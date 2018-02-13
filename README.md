@@ -18,7 +18,7 @@ Supports Android and iOS.
 
 In MainActivity.cs file
 
-```
+```cs
     Stormlion.SNavigation.Droid.Platform.Init(this);
 ```
 
@@ -26,19 +26,19 @@ In MainActivity.cs file
 
 In AppDelegate.cs file
 
-```
+```cs
     Stormlion.SNavigation.iOS.Platform.Init();
 ```
 ## Usage
 
-```
+```cs
     MainPage = new SNavigationPage(new Page1())
     {
         BarBackgroundColor = Color.SkyBlue,
     };
 ```
 
-```
+```xaml
 	<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 				 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 				 xmlns:snav="clr-namespace:Stormlion.SNavigation;assembly=Stormlion.SNavigation"
@@ -58,7 +58,7 @@ In AppDelegate.cs file
 	</ContentPage>
 ```
 
-```
+```xaml
 	<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 				 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 				 xmlns:snav="clr-namespace:Stormlion.SNavigation;assembly=Stormlion.SNavigation"
