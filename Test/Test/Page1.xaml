@@ -1,25 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage x:Class="Test.Page1"
+             xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:snav="clr-namespace:Stormlion.SNavigation;assembly=Stormlion.SNavigation"
-             x:Class="Test.Page1"
-             >
+             xmlns:snav="clr-namespace:Stormlion.SNavigation;assembly=Stormlion.SNavigation">
     <snav:SNavigationPage.NavContent>
-        <Grid Margin="50, 0, 50, 0"
-              >
-            <SearchBar BackgroundColor="White"
-                       Placeholder="Search ..."
-                       />
+        <Grid Margin="50,0,50,0">
+            <SearchBar BackgroundColor="White" Placeholder="Search ..." />
         </Grid>
     </snav:SNavigationPage.NavContent>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text="Page2"
-                    Clicked="OnClickedPage2"
-                    />
+            <Label HorizontalOptions="CenterAndExpand"
+                   Text="Welcome to Xamarin.Forms!"
+                   VerticalOptions="CenterAndExpand" />
+            <Button Clicked="OnClickedPage2" Text="Page2" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
