@@ -34,7 +34,7 @@ Stormlion.SNavigation.iOS.Platform.Init();
 ```cs
 MainPage = new SNavigationPage(new Page1())
 {
-BarBackgroundColor = Color.SkyBlue,
+    BarBackgroundColor = Color.SkyBlue,
 };
 ```
 
