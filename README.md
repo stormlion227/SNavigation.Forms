@@ -19,7 +19,7 @@ Supports Android and iOS.
 In MainActivity.cs file
 
 ```cs
-    Stormlion.SNavigation.Droid.Platform.Init(this);
+Stormlion.SNavigation.Droid.Platform.Init(this);
 ```
 
 ### iOS
@@ -27,15 +27,15 @@ In MainActivity.cs file
 In AppDelegate.cs file
 
 ```cs
-    Stormlion.SNavigation.iOS.Platform.Init();
+Stormlion.SNavigation.iOS.Platform.Init();
 ```
 ## Usage
 
 ```cs
-    MainPage = new SNavigationPage(new Page1())
-    {
-        BarBackgroundColor = Color.SkyBlue,
-    };
+MainPage = new SNavigationPage(new Page1())
+{
+BarBackgroundColor = Color.SkyBlue,
+};
 ```
 
 ```xaml
