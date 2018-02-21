@@ -39,53 +39,44 @@ In AppDelegate.cs file
 ```
 
 ```xaml
-	<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-				 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-				 xmlns:snav="clr-namespace:Stormlion.SNavigation;assembly=Stormlion.SNavigation"
-				 x:Class="Test.Page1"
-				 >
-		<snav:SNavigationPage.NavContent>
-			<Grid Margin="50, 0, 50, 0"
-				  >
-				<SearchBar BackgroundColor="White"
-						   Placeholder="Search ..."
-						   />
-			</Grid>
-		</snav:SNavigationPage.NavContent>
-		<ContentPage.Content>
-			...
-		</ContentPage.Content>
-	</ContentPage>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Test.Page1"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:snav="clr-namespace:Stormlion.SNavigation;assembly=Stormlion.SNavigation">
+    <snav:SNavigationPage.NavContent>
+        <Grid Margin="50,0,50,0">
+            <SearchBar BackgroundColor="White" Placeholder="Search ..." />
+        </Grid>
+    </snav:SNavigationPage.NavContent>
+    <ContentPage.Content>
+        ...
+    </ContentPage.Content>
+</ContentPage>
 ```
 
 ```xaml
-	<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-				 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-				 xmlns:snav="clr-namespace:Stormlion.SNavigation;assembly=Stormlion.SNavigation"
-				 x:Class="Test.Page2"
-				 >
-		<snav:SNavigationPage.NavContent>
-			<Grid Margin="50, 0, 50, 0">
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="1*" />
-					<ColumnDefinition Width="1*" />
-					<ColumnDefinition Width="1*" />
-				</Grid.ColumnDefinitions>
-				<BoxView Grid.Column="0"
-						 BackgroundColor="LightGray"
-						 />
-				<BoxView Grid.Column="1"
-						 BackgroundColor="LightBlue"
-						 />
-				<BoxView Grid.Column="2"
-						 BackgroundColor="Orange"
-						 />
-			</Grid>
-		</snav:SNavigationPage.NavContent>
-		<ContentPage.Content>
-			...
-		</ContentPage.Content>
-	</ContentPage>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Test.Page2"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:snav="clr-namespace:Stormlion.SNavigation;assembly=Stormlion.SNavigation">
+    <snav:SNavigationPage.NavContent>
+        <Grid Margin="50,0,50,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <BoxView Grid.Column="0" BackgroundColor="LightGray" />
+            <BoxView Grid.Column="1" BackgroundColor="LightBlue" />
+            <BoxView Grid.Column="2" BackgroundColor="Orange" />
+        </Grid>
+    </snav:SNavigationPage.NavContent>
+    <ContentPage.Content>
+        ...
+    </ContentPage.Content>
+</ContentPage>
 ```
 
 ## Contributions
