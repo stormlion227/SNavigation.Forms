@@ -1,9 +1,6 @@
 ﻿using Stormlion.SNavigation;
 using Stormlion.SNavigation.iOS;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
@@ -37,7 +34,7 @@ namespace Stormlion.SNavigation.iOS
 
             _navRenderer = Xamarin.Forms.Platform.iOS.Platform.CreateRenderer(CurrentNavContent);
             Xamarin.Forms.Platform.iOS.Platform.SetRenderer(CurrentNavContent, _navRenderer);
-            View.AddSubview(_navRenderer.NativeView);
+            NavigationBar.AddSubview(_navRenderer.NativeView);
             View.SetNeedsLayout();
         }
 
@@ -48,17 +45,14 @@ namespace Stormlion.SNavigation.iOS
             if (CurrentNavContent == null)
                 return;
 
-            var navBarFrameBottom = Math.Min(NavigationBar.Frame.Bottom, 140);
-            var toolbarY = NavigationBarHidden || NavigationBar.Translucent || !NavigationPage.GetHasNavigationBar((Element as SNavigationPage).CurrentPage) ? 0 : navBarFrameBottom;
-
-            Thickness margin = (_navRenderer.Element as Xamarin.Forms.View).Margin;
+            Thickness margin = (_navRenderer.Element as View).Margin;
             _navRenderer.NativeView.Frame = new CoreGraphics.CGRect(
                 margin.Left,
                 margin.Top,
-                View.Bounds.Width - margin.Left - margin.Right,
-                toolbarY - margin.Bottom - margin.Top
+                NavigationBar.Frame.Width - margin.Left - margin.Right,
+                NavigationBar.Frame.Height - margin.Bottom - margin.Top
                 );
-            Xamarin.Forms.Layout.LayoutChildIntoBoundingRegion(_navRenderer.Element, new Rectangle(0, 0, View.Bounds.Width, toolbarY));
+            Layout.LayoutChildIntoBoundingRegion(_navRenderer.Element, new Rectangle(0, 0, NavigationBar.Frame.Width, NavigationBar.Frame.Height));
         }
 
         void HandlePropertyChanged(object sender, PropertyChangedEventArgs e)

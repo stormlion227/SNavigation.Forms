@@ -22,5 +22,9 @@ namespace Test
             Navigation.PushAsync(new Page2());
         }
 
+        protected void OnClickedBack(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
+        }
     }
 }

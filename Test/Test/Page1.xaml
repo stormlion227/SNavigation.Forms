@@ -14,6 +14,7 @@
                    Text="Welcome to Xamarin.Forms!"
                    VerticalOptions="CenterAndExpand" />
             <Button Clicked="OnClickedPage2" Text="Page2" />
+            <Button Clicked="OnClickedBack" Text="Back" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -16,5 +16,10 @@ namespace Test
 		{
 			InitializeComponent ();
 		}
-	}
+
+        protected void OnClickedPage1(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Page1());
+        }
+    }
 }
